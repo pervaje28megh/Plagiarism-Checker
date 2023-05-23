@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Plagiarism Checker</title>
+      <style>
+         body {
+            background-color: #00FFFF;
+         }
+         h1 {
+            text-align: center;
+            color: #373737;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            margin-top: 50px;
+            text-shadow: 3px 3px #E6E6E6;
+         }
+         p {
+            text-align: center;
+            color: #373737;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+         }
+         textarea {
+            border: 2px solid #373737;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+         }
+         input[type=submit] {
+            background-color: #373737;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+         }
+         input[type=submit]:hover {
+            background-color: #FFFFFF;
+            color: #373737;
+         }
+         h3 {
+            text-align: center;
+            color: #373737;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin-top: 50px;
+            text-shadow: 2px 2px #E6E6E6;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Plagiarism Checker</h1>
+      <form action="/" method="POST">
+         <p>Input Text:</p>
+         <p><textarea name="query" rows="8" cols="50" autofocus placeholder="Paste your text here"></textarea></p>
+         <br>
+         <p><input type="submit" name="submit" value="Check for Plagiarism"></p>
+         <br>
+         <p>Press Ctrl+C in the terminal to quit and stop the process.</p>
+         <br>
+         <h3>{{output}}</h3>
+      </form>
+   </body>
+</html>
